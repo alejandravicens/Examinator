@@ -1,0 +1,3 @@
+Pregunta, Opción 1, Opción 2, Opción 3, Opción 4, Respuesta Correcta, Explicación
+1. ¿Cuál es la forma de la Tierra?, Esfera, Elipsoide de revolución, Cuboide, Irregular, 2, La Tierra es un elipsoide achatado en los polos debido a su rotación.
+2. ¿Qué ángulo forma el eje terrestre con la eclíptica?, 0°, 23°27', 45°, 90°, 2, Esta inclinación provoca las estaciones del año.
