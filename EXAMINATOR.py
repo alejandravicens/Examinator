@@ -7,6 +7,36 @@ import datetime
 import time
 import threading
 
+# Función para instalar un paquete
+def instalar_paquete(paquete):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", paquete])
+
+# Verificar si los módulos necesarios están instalados e instalarlos si es necesario
+try:
+    import tkinter as tk
+    from tkinter import filedialog, messagebox, scrolledtext
+except ImportError:
+    print("Instalando tkinter...")
+    instalar_paquete("tkinter")
+
+try:
+    import csv
+except ImportError:
+    print("Instalando csv...")
+    instalar_paquete("csv")
+
+try:
+    import os
+    import random
+    import datetime
+    import time
+    import threading
+except ImportError as e:
+    print(f"Error al importar un módulo: {e}")
+    # Si alguno de estos módulos falla al importar, se puede manejar aquí, pero generalmente vienen preinstalados en Python.
+
+# Ahora comienza el resto de tu script
+
 class ExaminatorApp:
     def __init__(self, root):
         self.root = root
